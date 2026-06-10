@@ -6,9 +6,8 @@ metadata:
   region: us-east-1
 
 managedNodeGroups:
-- name: spot
-  instanceTypes: ["c5.large","c5d.large","c5n.large","c5a.large"]
+- name: workers
+  instanceTypes: t3.small
   # AWS Free tier
   #instanceTypes: ["m7i-flex.large","c7i-flex.large","t3.small"]
-  spot: true
   desiredCapacity: 2
